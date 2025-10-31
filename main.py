@@ -32,7 +32,7 @@ async def test(text:str):
     return {"text": text}
 
 # Status endpoint
-@app.get("/status",tags=["Status"])
+@app.get("/status",tags=["status"])
 async def status(code:str = None,api_key:str = None):
     if api_key != APIKEY:
         return {"status": "Invalid API Key."}
