@@ -37,7 +37,7 @@ async def status(code:str = None,api_key:str = None):
     if api_key != APIKEY:
         return {"status": "Invalid API Key."}
     try:
-        status = data[code]["message"]
+        status = data[code]
     except KeyError:
         status = "Code not found."   
     return {"status": status}
