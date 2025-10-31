@@ -14,7 +14,7 @@ load_dotenv()
 APIKEY = os.getenv('APIKEY')
 
 # Initialize FastAPI app
-app = FastAPI()
+app = FastAPI(docs_url="/documentation",title="E7QAPI", version="1.0.0", description="API for e7qAPI status codes",summary="e7qAPI")
 
 # Load data from JSON file
 data = json.load(open('data/data.json', 'r', encoding='utf-8'))

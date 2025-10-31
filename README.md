@@ -2,7 +2,7 @@
 
 ## API ドキュメント
 
-[http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
+<http://localhost:8000/documentation>
 
 ## 概要
 
